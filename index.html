@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Microsoft controller site</title>
+</head>
+<body>
+    <button class="DarkModeButton" onclick="TurnOnOrOffDarkMode()"><img id="DarkModeImage" src="sun.png" alt="Zet Donkere modus aan"></button>
+    <ol class="Nav SegoeUIFont">
+        <img src="MicroSoft logo no background.png" class="NavLogoImage"></img>
+        <div style="width: 1px; height: 100px; background-color: black;" class="NavLineDiv"></div>
+        <img src="XBox logo.png" class="NavLogoImage"></img>
+        <div class="ButtonsNavDiv"></div>
+            <button class="NavButton">Game Pass &darr;</button>
+            <button class="NavButton">Games &darr;</button>
+            <button class="NavButton">Apperaten &darr;</button>
+            <button class="NavButton">Speel &darr;</button>
+            <button class="NavButton">Winkel &darr;</button>
+            <button class="NavButton">Community &darr;</button>
+            <button class="NavButton">Ondersteuning &darr;</button>
+        <div class="ButtonsNavDiv"></div>
+        <div class="ExtraButtonsNavDiv">
+            <button class="NavButton">Apperaten &darr;</button>
+            <button class="NavButton NavZoeken">Zoeken</button>
+            <button class="NavButton NavWinkelWagen">Winkelwagen</button>
+            <button class="NavButton">Aanmelden</button>
+        </div>
+    </ol>
+    <div class="MovingHeader">
+        <h2 class="MovingHeaderTitle SegoeUIFont">Xbox draadloze controller – Pulse Cipher Special Edition</h2>
+        <button class="MovingHeaderButton" id="OverzichtMovingHeader">Overzicht</button>
+        <button class="MovingHeaderButton" id="GalerijMovingHeader">Galerij</button>
+        <button class="MovingHeaderButton" id="SpecificatiesMovingHeader">Technische specificaties</button>
+        <div class="MovingHeaderAddToCartDiv SegoeUIFont">
+            <h1 class="MovingHeaderPrice">€ 74,99</h1>
+            <button class="MovingHeaderBuyButton ClickButton">TOEVOEGEN AAN WINKELWAGEN</button>
+        </div>
+    </div>
+    <img src="HeaderBackground.png" class="ControllerHeaderImage"></img>
+    <div class="TitleTexts">
+        <h1 class="Title SegoeUIFont">Xbox draadloze controller – Pulse Cipher Special Edition</h1>
+        <h1 class="BelowTitle SegoeUIFont">Transparante rode bovenbehuizing | Met rubber beklede, rode grips | Metallic rode triggers en navigatiepad | Bluetooth®-technologie</h1>
+        <h1 class="BelowTitle SegoeUIFont">Koop rechtstreeks in de Microsoft Store voor gratis verzending en probleemloos retourneren.</h1>
+        <button class="BuyButton ClickButton">TOEVOEGEN AAN WINKELWAGEN</button>
+    </div>
+     <div class="ControllerInfo">
+        <img src="ControllerMiddle.png" class="ControllerMiddle"></img>
+        <div class="ControllerInfoTexts">
+            <h1 class="SegoeUIFont ControllerInfoTitleText">Gamen op een hoger niveau</h1>
+            <p class="SegoeUIFont ControllerInfoTitleText">Onthul de mysteries met de Xbox draadloze controller – Pulse Cipher Special Edition met een doorzichtig, rood design, zilverkleurig interieur, metallic features en meer. Kijk door de transparant rode bovenbehuizing en zijkappen om metallic, zilverkleurige interieuronderdelen van binnenuit te zien schijnen.</p>
+        </div>
+    </div>
+    <div class="ControllerImages">
+        <img src="https://cms-assets.xboxservices.com/assets/68/16/68162a45-196a-4f96-8f32-16e01b88aec4.jpg?n=987678_Gallery-0_1_1350x759.jpg" class="ControllerImage"></img>
+        <div class="ControllerImagesClickList">
+            <img src="https://cms-assets.xboxservices.com/assets/68/16/68162a45-196a-4f96-8f32-16e01b88aec4.jpg?n=987678_Gallery-0_1_1350x759.jpg" class="ControllerImageSelection"></img>
+            <img src="https://cms-assets.xboxservices.com/assets/6f/e5/6fe56a4c-d615-4c39-9f02-a8bf292a78f1.jpg?n=987678_Gallery-0_2_1350x759.jpg" class="ControllerImageSelection"></img>
+            <img src="https://cms-assets.xboxservices.com/assets/0d/e6/0de6bc3f-18b4-46a8-b94e-bcb09c73096e.jpg?n=987678_Gallery-0_3_1350x759.jpg" class="ControllerImageSelection"></img>
+            <img src="https://cms-assets.xboxservices.com/assets/60/da/60da0a43-c224-47c9-9e3e-cbfd4d8fdbf3.jpg?n=987678_Gallery-0_4_1350x759.jpg" class="ControllerImageSelection"></img>
+        </div>
+    </div>
+    <div class="VideoDiv">
+        <video src="https://assets.xboxservices.com/assets/dd/41/dd41959d-7502-4a58-b7f6-48ecafefeb1a.mp4?n=Xbox-Wireless-Controller_Image-0_Share-Button_1600x808.mp4" class="ControllerScreenShotButtonVideo"></video>
+        <h1 class="VideoTitleText SegoeUIFont">Speciale deelknop</h1>
+        <p class="VideoDescription SegoeUIFont">Leg content zoals screenshots, opnames en meer naadloos vast en deel ze met de Delen-knop.</p>
+    </div>
+    <div class="ControllerButtonImagesBackground"></div> 
+    <div class="ControllerButtonImages">
+        <div class="ControllerButtonImagesShow">
+            <img src="https://cms-assets.xboxservices.com/assets/03/92/039291b7-4d08-4f3d-bbd5-6114e2537c9b.jpg?n=987678_3-up-0_Left_468x539.jpg" class="ControllerButtonImage"></img>
+            <img src="https://cms-assets.xboxservices.com/assets/84/87/84870494-a9d6-4e18-9bcf-4d746d84c742.jpg?n=987678_3-up-0_Center_468x539.jpg" class="ControllerButtonImage"></img>
+            <img src="https://cms-assets.xboxservices.com/assets/7b/8b/7b8bb738-0f41-48c9-bc7d-bb1c215b83bb.jpg?n=987678_3-up-0_Right_468x539.jpg" class="ControllerButtonImage"></img>
+        </div>
+    </div>
+    <div class="ControllerInformationTextDiv">
+        <h1 class="SegoeUIFont VideoTitleText">Blijf gefocust op je doel</h1>
+        <p class="SegoeUIFont VideoDescription">Blijf elegant op je doel gefocust met rode, metallic triggers en een bijpassende navigatiepad. Blijf in actie dankzij met rubber beklede rode grips op de achterkant van de behuizing.</p>
+    </div>
+    <div class="Connection">
+        <img src="ControllerConnection.png" alt="ConnectController" class="ConnectionControllerImage"></img>
+        <div class="ConnectionTextsDiv">
+            <h1 class="SegoeUIFont ConnectionInfoTitleText">Schakelen tussen apparaten</h1>
+            <p class="SegoeUIFont ConnectionInfoTitleText">Eenvoudig koppelen en schakelen tussen apparaten, waaronder Xbox Series X, Xbox Series S, Windows-pc, Android en iOS.*</p>
+        </div>
+    </div>
+    <div class="Compadibility">
+        <div class="CompadibilityTextsDiv">
+            <h1 class="SegoeUIFont ControllerInfoTitleText">Compatibiliteit</h1>
+            <p class="SegoeUIFont ControllerInfoTitleText">Inclusief Xbox Wireless- en Bluetooth®-technologie voor draadloos gamen op consoles, Windows 10/11-pc's, mobiele telefoons en tablets. Sluit een compatibele headset aan op de 3,5 mm-stereo headsetaansluiting.*</p>
+        </div>
+        <img src="https://cms-assets.xboxservices.com/assets/c1/1f/c11ff7b1-3f51-4383-89d5-49813a7129d8.jpg?n=987678_Feature-0_Compatibility_1040x700.jpg" class="CompadibilityImage"></img>
+    </div>
+    <div class="SegoeUIFont Technical"> 
+        <h1 class="TechnicalTitleText">Technische specificaties</h1>
+        <div class="Spects">
+            <div class="SpectsTexts1">
+                <h2 class="SpectsTitleText">Connectiviteit</h2>
+                <p class="SpectsDescriptionText">	Maak verbinding met Xbox-consoles met Xbox draadloos. Maak draadloos verbinding met Windows 10/11-pc's, tablets, iOS en Android via Bluetooth.*</p>
+            </div>
+            <div class="MoreSpects">
+                <div class="SpectsTexts">
+                    <h2 class="SpectsTitleText">Compatibel met</h2>
+                    <p class="SpectsDescriptionText">Xbox Series X, Xbox Series S, Windows 10/11, Android en iOS.*</p>
+                </div>
+                <div class="SpectsTexts">
+                    <h2 class="SpectsTitleText">Batterij</h2>
+                    <p class="SpectsDescriptionText">	AA-batterijen voor tot 40 uur batterijduur</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="GamePassAd">
+        <img src="https://cms-assets.xboxservices.com/assets/4d/52/4d522c13-a4e8-4876-b7f9-52f30b3f8a10.jpg?n=XGP-Cross-Sell_Page-Hero-768_Dec-2024_1083x609_02.jpg" alt="game pass image" class="GamePassBackgroundImage"></img>
+        <img src="https://assets.xboxservices.com/assets/9d/d9/9dd95193-52f0-4c07-8e37-f678d406522a.svg?n=XGP-Cross-sell_Page-Hero_Image-0_XGP-Logo_145x24.svg" alt="gamepasstext" class="GamePassTextImage"></img>
+        <h1 class="GamePassTitle SegoeUIFont">Ontdek je volgende favoriete game</h1>
+        <h1 class="GamePassDescription SegoeUIFont">Geniet van honderden geweldige games op console, pc en in de cloud Duik in legendarische franchises. Speel samen met vrienden.</h1>
+        <button class="GamePassButton MovingHeaderBuyButton ClickButton">WORD NU LID</button>
+    </div>
+    <div class="ControllerTypes">
+        <div class="ControllerTypesController MainController">
+            <img src="https://cms-assets.xboxservices.com/assets/82/6e/826e12ec-9789-494e-897f-ba7370255fd0.png?n=XWC-Robot-White_Cross-Sell_Panes-Triptic-Large-1400_570x570.png" alt="Robot white controller"></img>
+            <h1 class="ControllerTypesTitle SegoeUIFont">Xbox draadloze controller – Robot White</h1>
+            <button class="ClickButton ControllerInfoButton">MEER INFORMATIE</button>
+        </div>
+        <hr></hr>
+        <div class="ControllerTypesColumn">
+            <div class="ControllerTypesController SecondaryController">
+                <img src="https://assets.xboxservices.com/assets/c7/41/c7417bc7-3d9b-4b28-bc73-28b3913af1c3.png?n=320089_Panes-Triptic-Small-1084-0_cross-sell_353x353.png" alt="Robot white controller"></img>
+                <h1 class="ControllerTypesTitle SegoeUIFont">draadloze controller Series 2 - Core (wit)</h1>
+                <button class="ClickButton ControllerInfoButton">MEER INFORMATIE</button>
+            </div>
+            <hr></hr>
+            <div class="ControllerTypesController SecondaryController">
+                <img src="https://cms-assets.xboxservices.com/assets/51/0a/510a0bd3-9c2e-4cee-bb8c-8db07065cb46.png?n=84975293_Panes-Triptic-Small-1084-0_353x353_01.png" alt="Robot white controller"></img>
+                <h1 class="ControllerTypesTitle SegoeUIFont">Call of Duty®: Black Ops 6-controllers</h1>
+                <button class="ClickButton ControllerInfoButton">MAAK JE EIGEN ONTWERP</button>
+            </div>
+        </div>
+    </div>
+    <div class="FooterInfoStart">
+        <p class="FooterInfoStartText">Klik <span class="Underline">hier</span> voor informatie over de productveiligheid.</p>
+        <p class="FooterInfoStartText">*Zie <span class="Underline">xbox.com/controller-compatibility</span> Te gebruiken voor games die compatibel zijn met controllers. Mobiele data en bluetooth: alleen op bepaalde apparaten en versies; sommige functionaliteiten worden niet ondersteund. Knoppen toewijzen beschikbaar via de Xbox Accessoires-app voor Xbox Series X|S, Xbox One en Windows 10/11. App voor Windows 10/11 vereist compatibele USB-C-kabel (afzonderlijk verkrijgbaar).</p>
+        <p class="FooterInfoStartText">**Prijzen en beschikbaarheid kunnen per verkoper verschillen.</p>
+        <p class="FooterInfoStartText">***De batterijduur is sterk afhankelijk van headsets, extra accessoires, gebruik en andere factoren. Tests uitgevoerd door Microsoft met preproductie-eenheden.</p>
+    </div>
+    <div class="SocialMedia">
+        <p class="Follow">Volg XBox</p>
+        <div class="SocialMediaLinkImages">
+            <img src="https://static-00.iconduck.com/assets.00/email-icon-2048x1628-mzownmgf.png" alt="GMail" class="SocialMediaImage"></a>
+            <img src="https://cdn-icons-png.flaticon.com/512/59/59439.png" alt="FaceBook" class="SocialMediaImage"></a>
+            <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/x-jvgvt5gje92oz29ez4fgd.png/x-0muuxjzgzvtlpaduv3p4k2s.png?_a=DAJFJtWIZAAC" alt="Twitter" class="SocialMediaImage"></a>
+            <img src="https://cdn-icons-png.flaticon.com/512/3661/3661391.png" alt="Instagram" class="SocialMediaImage"></a>
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384023.png" alt="WhatsApp" class="SocialMediaImage"></a>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRn5_nndnvIwKURqzcDGVDo1euHKpb1IPBXiw&s.png" alt="TikTok" class="SocialMediaImage"></a>
+            <img src="https://cdn-icons-png.flaticon.com/512/152/152810.png" alt="Youtube" class="SocialMediaImage"></a>
+        </div>
+    </div>
+    <div Class="FooterEndBackGround">
+    <div class="FooterInfoEnd SegoeUIFont">
+        <div class="FooterLinksSection">
+            <ul class="FooterLinks">
+                <h1 class="FooterLinksTitle">Bladeren</h1>
+                <button class="FooterInfoEndButton">Xbox consoles</button>
+                <button class="FooterInfoEndButton">Xbox-games</button>
+                <button class="FooterInfoEndButton">Xbox Game Pass</button>
+                <button class="FooterInfoEndButton">Xbox-accessoires</button>
+            </ul>
+        </div>
+        <div class="FooterLinksSection">
+            <ul class="FooterLinks">
+                <h1 class="FooterLinksTitle">Bronnen</h1>
+                <button class="FooterInfoEndButton">Xbox-ondersteuning</button>
+                <button class="FooterInfoEndButton">Feedback</button>
+                <button class="FooterInfoEndButton">Communautaire voorschriften</button>
+                <button class="FooterInfoEndButton">Waarschuwing voor risico op aanval van lichtgevoelige epilepsie</button>
+            </ul>
+        </div>
+        <div class="FooterLinksSection">
+            <ul class="FooterLinks">
+                <h1 class="FooterLinksTitle">Microsoft Store</h1>
+                <button class="FooterInfoEndButton">Microsoft-account</button>
+                <button class="FooterInfoEndButton">Microsoft Store-ondersteuning</button>
+                <button class="FooterInfoEndButton">Retouren</button>
+                <button class="FooterInfoEndButton">Bestellingen volgen</button>
+            </ul>
+        </div>
+        <div class="FooterLinksSection">
+            <ul class="FooterLinks">
+                <h1 class="FooterLinksTitle">Voor ontwikkelaars</h1>
+                <button class="FooterInfoEndButton">Games</button>
+            </ul>
+        </div>
+    </div>
+    </div>
+    <div class="FooterAbsoluteBottom SegoeUIFont">
+        <button class="FooterInfoEndButton">Nederlands (Nederland)</button>
+        <button class="FooterInfoEndButton">Uw privacykeuzes</button>
+        <button class="FooterInfoEndButton">Privacy van consumentenstatus</button>
+    </div>
+    <div class="FooterAbsoluteBottom SegoeUIFont">
+        <button class="FooterInfoEndButton">Contact opnemen met Microsoft</button>
+        <button class="FooterInfoEndButton">Impressum</button>
+        <button class="FooterInfoEndButton">Privacy en cookies</button>
+        <button class="FooterInfoEndButton">Cookies beheren</button>
+        <button class="FooterInfoEndButton">Gebruiksvoorwaarden</button>
+        <button class="FooterInfoEndButton">Handelsmerken</button>
+        <button class="FooterInfoEndButton">Kennisgevingen van derden</button>
+        <button class="FooterInfoEndButton">Over onze advertenties</button>
+        <button class="FooterInfoEndButton">EU Compliance DoCs</button>
+        <button class="FooterInfoEndButton">© Microsoft 2025</button>
+    </div>
+</body>
+<script>
+    let ControllerInfoDiv = document.getElementsByClassName("ControllerInfo")[0];
+    let ControllerImagesDiv = document.getElementsByClassName("ControllerImages")[0];
+    let TechnicalDiv = document.getElementsByClassName("Technical")[0];
+    let SpesificationsText = document.getElementById("SpecificatiesMovingHeader");
+    let GalerijText = document.getElementById("GalerijMovingHeader");
+    let OverzichtText = document.getElementById("OverzichtMovingHeader");
+
+    // Array to store all target divs
+    let targetDivs = [ControllerInfoDiv, ControllerImagesDiv, TechnicalDiv];
+
+    // Function to find the nearest div to the viewport center
+    function findNearestDiv() {
+        let viewportCenter = window.innerHeight / 2;
+        let nearestDiv = null;
+        let nearestDistance = Infinity;
+
+        targetDivs.forEach(div => {
+            if (div) { // Ensure the div exists
+                let rect = div.getBoundingClientRect();
+                let divCenter = rect.top + rect.height / 2;
+                let distance = Math.abs(viewportCenter - divCenter);
+
+                if (distance < nearestDistance) {
+                    nearestDistance = distance;
+                    nearestDiv = div;
+                }
+            }
+        });
+
+        // Reset text colors
+        SpesificationsText.style.color = "";
+        GalerijText.style.color = "";
+        OverzichtText.style.color = "";
+
+        // Highlight the nearest div
+        if (nearestDiv === TechnicalDiv) {
+            SpesificationsText.style.color = "green";
+            if (DarkModeEnabled === true) {
+                SpesificationsText.style.color = "greenyellow";
+            }
+            SpesificationsText.style.textDecoration = "underline";
+        } else if (nearestDiv === ControllerImagesDiv) {
+            GalerijText.style.color = "green";
+            if (DarkModeEnabled === true) {
+                GalerijText.style.color = "greenyellow";
+            }
+            GalerijText.style.textDecoration = "underline";
+        } else if (nearestDiv === ControllerInfoDiv) {
+            OverzichtText.style.color = "green";
+            if (DarkModeEnabled === true) {
+                OverzichtText.style.color = "greenyellow";
+            }
+            OverzichtText.style.textDecoration = "underline";
+        }
+
+        if (nearestDiv) {
+            console.log("Nearest Div:", nearestDiv.className);
+        }
+    }
+
+    // Add scroll event listener
+    window.addEventListener('scroll', findNearestDiv);
+    findNearestDiv();
+</script>
+<script>
+    let DarkModeEnabled = false;
+
+let DarkModeButton = document.querySelector('.DarkModeButton');
+let ControllerHeaderImage = document.querySelector('.ControllerHeaderImage')
+let DarkModeImage = document.getElementById('DarkModeImage')
+
+if (DarkModeButton) {
+    console.log("Dark mode button found!");
+}
+
+if (DarkModeImage) {
+    console.log('Dark mode image found!')
+}
+
+function TurnOnOrOffDarkMode() {
+    if (DarkModeEnabled === true) {
+        console.log("Dark Mode Disabled");
+        DarkModeEnabled = false;
+        document.documentElement.style.setProperty('--whitecolor', 'white'); 
+        document.documentElement.style.setProperty('--darkcolor', 'black'); 
+        document.documentElement.style.setProperty('--whitesmoke', 'white')
+        document.documentElement.style.setProperty('--footergray', 'gray'); 
+        document.documentElement.style.setProperty('--socialmedialinkimagecolor', 'transparent'); 
+        DarkModeImage.src = 'sun.png'
+
+    } else if (DarkModeEnabled === false) {
+        console.log("Dark Mode Enabled");
+        DarkModeEnabled = true;
+        document.documentElement.style.setProperty('--whitecolor', 'black'); 
+        document.documentElement.style.setProperty('--darkcolor', 'white'); 
+        document.documentElement.style.setProperty('--whitesmoke', 'black'); 
+        document.documentElement.style.setProperty('--footergray', 'white'); 
+        document.documentElement.style.setProperty('--socialmedialinkimagecolor', 'white'); 
+        DarkModeImage.src = 'moon.png'
+    }
+    findNearestDiv()
+} 
+</script>
+</html>
+
