@@ -1,0 +1,663 @@
+:root {
+    --whitecolor: white;
+    --darkcolor: black;
+    --greenyellow: greenyellow;
+    --gray: rgb(62, 62, 62);
+    --lightgray: #b5b5b5;
+    --whitesmoke: whitesmoke;
+    --footergray: gray;
+    --socialmedialinkimagecolor: transparent;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--whitecolor);
+}
+
+/* Class for button hover animation */
+.ClickButton {
+    transition: all 0.3s ease-in-out; /* Smooth transition for all properties */
+}
+
+.ClickButton:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
+    text-decoration: underline; /* Adds an underline */
+    text-decoration-thickness: 3px; /* Makes the underline thick */
+}
+
+/* Class for button click animation */
+.ClickButton:active {
+    animation: clickAnimation 0.1s ease-in-out; /* Triggers click animation */
+}
+
+@keyframes clickAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95); /* Slightly shrinks the button on click */
+    }
+    100% {
+        transform: scale(1); /* Returns to original size */
+    }
+}
+
+.SegoeUIFont {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Underline {
+    display: inline-block; 
+    border-bottom: 2px solid white; 
+    font-weight: bold;
+  }
+
+  .DarkModeButton {
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 20;
+    padding: 1.2%;
+    border-radius: 50%;
+    border: none;
+    background-color: greenyellow;
+    font-size: 1em;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    cursor: pointer;
+    box-shadow: 0 2% 4% rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.DarkModeButton:hover {
+    background-color: rgb(45, 255, 59);
+    box-shadow: 0 3% 6% rgba(0, 0, 0, 0.3);
+}
+
+.DarkModeButton:active {
+    transform: scale(0.95);
+}
+
+.DarkModeButton img {
+    width: 40px; 
+    height: auto; 
+}
+
+  .NavLineDiv {
+    margin-right: 1%;
+    margin-left: 1%;
+    background-color: var(--darkcolor);
+    color: var(--darkcolor);
+  }
+
+  .NavButton:hover {
+    text-decoration: underline;     
+}
+
+.ButtonsNavDiv {
+    display: flex;
+    gap: 1%;
+    width: 20%;
+}
+
+.ExtraButtonsNavDiv {
+    display: flex;
+    margin-left: 4%;
+    gap: 25%;
+}
+
+.NavZoeken {
+    margin-top: 2%;
+}
+
+.NavWinkelWagen {
+    padding-bottom: 3%;
+}
+
+.FooterInfoEndButton:hover {
+    text-decoration: underline; 
+}
+
+.SocialMediaImage:hover {
+    background-color: gray; 
+}
+
+.MovingHeaderButton:hover {
+    text-decoration: underline; 
+}
+
+.MovingHeader {
+    position: sticky;
+    top: 0; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    height: 3em;
+    background-color: var(--whitecolor);
+    color: rgb(0, 0, 0);
+    z-index: 10;
+}
+
+.MovingHeaderTitle {
+    font-size: large;
+    font-weight: bold;
+    margin-left: 5%;
+    color: var(--darkcolor);
+}
+
+.MovingHeaderButton {
+    background-color: var(--whitecolor);
+    padding: 0.5em 1em;
+    border: none;
+    cursor: pointer;
+    font-size: small;
+    font-weight: 600;
+    color: var(--darkcolor)
+}
+
+.Title {
+    font-size: 2.7em;
+    color: var(--darkcolor)
+}
+
+.MovingHeaderAddToCartDiv {
+    margin-bottom: 1%;
+    align-items: center;
+    margin-left: 5%;
+} 
+
+.MovingHeaderPrice {
+    font-size: large;
+    text-align: center;
+    font-weight: normal;
+    color: var(--darkcolor);
+}
+
+.Nav {
+    display: flex;
+    flex-direction: row;
+    height: 1em; 
+    width: 90%;
+    z-index: 9;
+}
+
+.MovingHeaderBuyButton {
+    cursor: pointer;
+    font-size: medium;
+    background-color: var(--greenyellow);
+    font-weight: 400;
+    border: none;
+    padding: 0.5em 1em;
+}
+
+.BuyButton {
+    cursor: pointer;
+    font-size: medium;
+    background-color: var(--greenyellow);
+    font-weight: 400;
+    border: none;
+    padding: 0.5em 1em;
+    margin-right: 40%;
+    margin-left: 40%;
+}
+
+
+.VerticalLine {
+    flex: 1;
+    border-right: 1px solid var(--whitecolor);
+}
+
+
+.NavLogoImage {
+    display: flex;
+    justify-content: flex-start;
+    width: 9%;
+    height: 1.5em;
+}
+
+.NavButton {
+    display: flex;
+    background: none;
+    width: 8%;
+    height: 1em;
+    cursor: pointer;
+    border: none;
+    font-size: small;
+    color: var(--darkcolor)
+}
+
+.ControllerHeaderImage {
+    display: flex;
+    width: 100%;
+}
+
+.TitleTexts {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.BelowTitle {
+    color: gray;
+    font-weight: 400;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: large;
+}
+
+.ControllerInfo {
+    display: flex;
+    font-size: large;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 7%;
+}
+
+.ControllerMiddle {
+    max-width: 60%;
+    max-height: 60%;
+    padding-left: 5%;
+}
+
+.ControllerInfoTexts {
+    display: flex;
+    background: var(--gray);
+    margin-top: 4%;
+    margin-bottom: 6%;
+    flex-direction: column;
+    color: white;
+}
+
+.ControllerInfoTitleText {
+    color: white;
+    font-size: larger;
+    flex: 1;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.ControllerImage {
+    display: flex;
+    border-radius: 50%;
+    width: 90%;
+    justify-content: center;
+}
+
+.ControllerImagesClickList {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    justify-content: center;
+}
+
+.ControllerImageSelection {
+    width: 20%;
+    border: 0.03px solid #000000; 
+}
+
+.VideoDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+.ControllerScreenShotButtonVideo {
+    display: flex;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 10%;
+}
+
+.VideoTitleText {
+    font-weight: 700;
+    color: var(--darkcolor)
+}
+
+.VideoDescription {
+    font-weight: 400;
+    color: var(--darkcolor)
+}
+
+.ControllerButtonImages {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+    align-items: center;
+}
+
+.ControllerButtonImagesShow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    position: absolute;
+    gap: 1%;
+    padding-bottom: 20%;
+}
+
+.ControllerButtonImagesBackground {
+    background: var(--lightgray);
+    height: 500px;  
+    width: 87%;
+    padding-right: 2%;
+    margin: 0 auto;
+}
+
+.ControllerButtonImage {
+    display: flex;
+    width: 27%;
+    height: 30%;
+}
+
+.ControllerInformationTextDiv {
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 6%;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.Connection {
+    display: flex;
+    font-size: large;
+    flex-direction: row;
+}
+
+.ConnectionControllerImage {
+    display: flex;
+    width: 80%;
+    height: 90%;
+}
+
+.ConnectionInfoTitleText {
+    color: var(--darkcolor)
+}
+
+.ConnectionTextsDiv {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    padding-left: 70%;
+    margin-top: 25%;
+}
+
+.Compadibility {
+    display: flex;
+    font-size: large;
+    flex-direction: row;
+    padding-left: 5%;
+    padding-right: 10%;
+    padding-top: 7%;
+}
+
+.CompadibilityInfoTitleText {
+    color: white;
+    font-size: large;
+    flex: 1;
+}
+
+.CompadibilityImage {
+    max-width: 60%;
+    max-height: 60%;
+    padding-right: 5%;
+}
+
+.CompadibilityTextsDiv {
+    display: flex;
+    background: var(--gray);
+    margin-top: 4%;
+    margin-bottom: 6%;
+    flex-direction: column;
+}
+
+.Spects {
+    display: flex;
+    font-size: large;
+    flex-direction: row;
+    padding-left: 5%;
+    gap: 5%;
+    padding-top: 5em;
+}
+
+.MoreSpects {
+    display: flex;
+    margin-top: 4%;
+    margin-bottom: 6%;
+    flex-direction: column;
+}
+
+.SpectsTexts1 {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    padding-top: 7%;
+    max-width: 30%;
+    color: var(--darkcolor);
+}
+
+.SpectsTexts {
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    color: var(--darkcolor);
+}
+
+.GamePassAd {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+.GamePassButton {
+    display: flex;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 32%;
+}
+
+.GamePassBackgroundImage {
+    display: flex;
+    width: 85%;
+    height: 35em;
+}
+
+.GamePassTextImage {
+    display: flex;
+    width: 30%;
+    height: 15%;
+    position: absolute;
+    margin-top: 10%;
+}
+
+.GamePassTitle {
+    color: white;
+    margin-top: 20%;
+    position: absolute;
+    font-size: 2.5em;
+}
+
+.GamePassDescription {
+    color: white;
+    margin-top: 25%;
+    position: absolute;
+    font-size: 1.7em;
+    max-width: 60%;
+    margin-left: 3%;
+}
+
+.TechnicalTitleText {
+    color: var(--darkcolor);
+}
+
+.ControllerTypes {
+    display: flex;
+    font-size: large;
+    flex-direction: row;
+    padding-bottom: 10%;
+}
+
+.ControllerTypesController {
+    display: flex;
+    text-align: center;
+}
+
+.ControllerTypesColumn {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+}
+
+.ControllerTypesTitle {
+    color: var(--darkcolor)
+}
+
+.ControllerInfoButton {
+    display: flex;
+    cursor: pointer;
+    margin-top: 20%;
+    gap: 5%;
+    background: none;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: medium;
+    color: green;
+    justify-content: center;
+}
+
+.MainController {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    width: 30%;
+    padding-left: 10%;
+}
+
+.SecondaryController {
+    display: flex;
+    flex-direction: column;
+    gap: 1%;
+    padding-right: 10%;
+    height: 5%;
+    width: 60%;
+}
+
+.FooterInfoStart {
+    display: flex;
+    background-color: #000000;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-style: italic;
+}
+
+.FooterInfoStartText {
+    color: white;
+    font-size: small;
+    flex: 1;
+    padding-left: 7%;
+}
+
+.SocialMedia {
+    display: flex;
+    background-color: var(--whitesmoke);
+    margin-top: 2%;
+    flex-direction: row;
+    gap: 1%;
+    align-items: center;
+}
+
+.Follow {
+    color: var(--darkcolor);
+    font-size: small;
+    flex: 1;
+    padding-left: 2%;
+    padding-right: 2%;
+    align-items: center;
+}
+
+.SocialMediaImage {
+    display: flex;
+    width: 2%;
+    height: 2%;
+    background-color: var(--socialmedialinkimagecolor);
+}
+
+.SocialMediaLinkImages {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
+    cursor: pointer;
+}
+
+.FooterLinksSection {
+    display: flex;
+    width: 30%;
+    background-color: var(--whitesmoke);
+    align-items: center;
+    gap: 4%
+}
+
+.FooterLinksTitle {
+    color: gray;
+    font-size: medium;
+    flex: 1;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-left: 10%;
+}
+
+.FooterLinks {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    max-width: 30%;
+}
+
+.FooterInfoEndButton {
+    display: flex;
+    outline: none;
+    border: none;
+    background-color: var(--whitesmoke);
+    color: var(--footergray);
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.FooterInfoEnd {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.FooterEndBackGround {
+    display: flex;
+    background-color: var(--whitesmoke);
+}
+
+.FooterAbsoluteBottom {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    gap: 2%;
+    background-color: var(--whitesmoke);
+}
